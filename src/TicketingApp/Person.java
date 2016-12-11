@@ -5,12 +5,10 @@ package TicketingApp;
  */
 public class Person {
 
-    int id;
     String name;
     boolean isStudent;
 
-    public Person(int id, String name, boolean isStudent) {
-        this.id = id;
+    public Person(String name, boolean isStudent) {
         this.name = name;
         this.isStudent = isStudent;
     }
