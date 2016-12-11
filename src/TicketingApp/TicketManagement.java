@@ -8,16 +8,16 @@ import java.util.List;
  */
 public class TicketManagement {
 
-    List <Ticketing> IssuedTickets = new ArrayList <Ticketing> ();
+    List<Ticketing> IssuedTickets = new ArrayList<Ticketing>();
 
-    public void IssueTicket (Ticketing ticketing){
+    public void IssueTicket(Ticketing ticketing) {
         ticketing.ticketId = ticketing.generateTicketId();
 
 
         IssuedTickets.add(ticketing);
     }
 
-    public List <Ticketing> IssuedTickets (){
+    public List<Ticketing> IssuedTickets() {
         return IssuedTickets;
     }
 

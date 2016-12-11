@@ -21,14 +21,14 @@ public class Ticketing {
 
 
     TicketManagement tm = new TicketManagement();
-    List <Ticketing> isTicket = tm.IssuedTickets();
+    List<Ticketing> isTicket = tm.IssuedTickets();
 
-    public int generateTicketId(){
+    public int generateTicketId() {
         // To generate a random number from 1000 to 6000
-        int id = 1000 + (int)(Math.random() * 5000);
+        int id = 1000 + (int) (Math.random() * 5000);
 
-        for (Ticketing t : isTicket){
-            if (t.ticketId == id){
+        for (Ticketing t : isTicket) {
+            if (t.ticketId == id) {
                 generateTicketId();
             }
         }
